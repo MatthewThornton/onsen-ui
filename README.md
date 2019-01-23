@@ -1,2 +1,1 @@
-# onsen-ui
-Experiment with onsen ui. 
+# react-onsenui-redux
