@@ -3,6 +3,9 @@ import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import * as Ons from "react-onsenui"; 
 
+// TODO fix styles loader. Currently using url links to styles.
+// import "./styles";
+
 // main routes
 import AppRoutes from "./routes";
 import store from "./store";

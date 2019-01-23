@@ -3,6 +3,7 @@ import InputPreview from "../components/InputPreview";
 import { connect } from "react-redux";
 import { setMessage } from "../actions/message";
 import { Link } from "react-router-dom";
+import { Page, Toolbar, Button } from "react-onsenui";
 
 class App extends Component {
     _onChange = (value) => {
@@ -11,16 +12,16 @@ class App extends Component {
     render() {
         const { message } = this.props.messageReducer;
         return (
-            <div>
+            <Page>
                 <p>{ message } </p>
                 <InputPreview
                     value={message}
                     onChange={this._onChange} 
                 />
                 <Link to="/about">
-                    <button>Go to About</button>
+                    <Button>Go to About</Button>
                 </Link>
-            </div>
+            </Page>
         )
     }
 }
