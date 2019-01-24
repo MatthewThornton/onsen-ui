@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import * as Ons from "react-onsenui"; 
+import { Page, Toolbar, Splitter, SplitterContent, SplitterSide } from "react-onsenui"; 
 
 // TODO fix styles loader. Currently using url links to styles.
 // import "./styles";
@@ -11,10 +11,13 @@ import AppRoutes from "./routes";
 import store from "./store";
 
 ReactDOM.render(
-    <Ons.Page>
+    <Page>
+        <Toolbar>
+            <div className="center">My title</div>
+        </Toolbar>
         <Provider store={store}>
             <AppRoutes />
         </Provider>
-    </Ons.Page>,
+    </Page>,
     document.getElementById("app")
 )
