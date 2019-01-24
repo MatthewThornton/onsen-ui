@@ -5,6 +5,7 @@ import { setMessage } from "../actions/message";
 import { Link } from "react-router-dom";
 import { Page, Toolbar, Button } from "react-onsenui";
 
+
 class App extends Component {
     _onChange = (value) => {
         this.props.dispatch(setMessage(value))

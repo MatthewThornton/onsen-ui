@@ -14,7 +14,7 @@ ReactDOM.render(
     <Page renderToolbar={() => <NavBar backButton={true} title={`Title ${name}`} />}>
         <Provider store={store}>
             <AppRoutes />
-        </Provider>
+        </Provider>      
     </Page>,
     document.getElementById("app")
 )

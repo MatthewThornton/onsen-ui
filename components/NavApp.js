@@ -3,14 +3,15 @@ import React from 'react';
 import {
     Toolbar,
     BackButton,
-    ToolbarButton
+    ToolbarButton,
+    Icon
 } from "react-onsenui";
 
 const NavApp = ({ title, navigator, backButton }) => (
   <Toolbar>
     <div className="left">
       <ToolbarButton>
-        <i className="ion-navicon" />
+        <Icon icon="ion-navicon, material:md-menu" />
       </ToolbarButton>
     </div>
     <div className="center">{title}</div>
